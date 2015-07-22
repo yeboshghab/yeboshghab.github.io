@@ -1,6 +1,10 @@
+# Site Settings
+title: Ye Boshghab
+
 # Build settings
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
 paginate: 5
+timezone: Asia/Tehran
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
