@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-<!-- Page Content -->
-{{ content }}
+<!--[if IE 8]> <html lang="fa" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="fa" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="fa"> <!--<![endif]-->
+{% include head.html %}
+<body dir="rtl" style="visibility: hidden">
+<div id="wrap">
+    {% include header.html %}
+    {% include banner.html %}
+    {% include countdown.html %}
+    {{content}}
+</div>
+{% include footer.html %}
 </body>
-</html>
+</html> 
+

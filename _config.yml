@@ -1,10 +1,11 @@
 # Site Settings
-title: Ye Boshghab
+title: یه بشقاب
+tagline: پیشنهاد غیرمنتظره و شگفت‌انگیز
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
+paginate: 10
 timezone: Asia/Tehran
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
