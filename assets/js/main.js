@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $('#countdown').countdown('2016/01/01').on('update.countdown', function(event) {
+    $('#countdown').countdown('2016/02/04').on('update.countdown', function(event) {
         $('#countdown-seconds').html(event.strftime('%S'));
         $('#countdown-minutes').html(event.strftime('%M'));
         $('#countdown-hours').html(event.strftime('%H'));
