@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /cdn-cgi/
+Disallow: /m/
 
 Sitemap: http://www.yeboshghab.com/sitmap.xml
