@@ -71,20 +71,15 @@ body {
 
   width: 100%;
   height: 227px;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  transform: rotate(10deg);
 }
 .animation .items {
     width: 35px;
     height: 35px;
     background: transparent no-repeat center;
     background-size: 100%;
-    position: absolute;
-    left: 150px;
-    top: 150px;
+    position: relative;
+    left: -50%;
+    top: 65%;
     -moz-animation: items 0.2s infinite ease-in-out;
     -moz-transform-origin: 150% 150%;
     -webkit-animation: items 0.2s infinite ease-in-out;
@@ -100,34 +95,82 @@ body {
     background-image:  url("/assets/img/item-1.svg");
 }
 .animation .item-2 {
-    left: 210px;
-    top: 110px;
+    left: -34%;
+    top: 35%;
     background-image:  url("/assets/img/item-2.svg");
     transform-origin: 70% 150%;
     animation-duration: 0.15s;
 }
 .animation .item-3 {
-    left: 155px;
-    top: 110px;
+    left: -53%;
+    top: 17%;
     background-image:  url("/assets/img/item-2.svg");
     transform-origin: 120% 50%;
     animation-duration: 0.1s;
 }
 .animation .item-4 {
-    left: 115px;
-    top: 80px;
+    left: -59%;
+    top: -10%;
     background-image:  url("/assets/img/item-4.svg");
     transform-origin: 120% 75%;
     animation-duration: 0.2s;
 }
 .animation .item-5 {
     width: 20px;
-    left: 215px;
-    top: 55px;
+    left: -36%;
+    top: -36%;
     background-image:  url("/assets/img/item-5.svg");
     transform-origin: 150% 150%;
     animation-duration: 0.08s;
 }
+@media (min-width: 480px) {
+    .animation .item-2 {
+        left: -40%;
+    }
+    .animation .item-3 {
+        left: -52%;
+    }
+    .animation .item-4 {
+        left: -55%;
+    }
+    .animation .item-5 {
+        left: -41.5%;
+    }
+}
+@media (min-width: 768px) {
+    .animation .item-2 {
+        left: -41%;
+    }
+    .animation .item-3 {
+        left: -49%;
+    }
+    .animation .item-5 {
+        left: -42%;
+    }
+}
+@media (min-width: 992px) {
+    .animation .item-2 {
+        left: -43%;
+    }
+    .animation .item-4 {
+        left: -54%;
+    }
+    .animation .item-5 {
+        left: -44%;
+    }
+}
+@media (min-width: 1200px) {
+    .animation .item-2 {
+        left: -44%;
+    }
+    .animation .item-4 {
+        left: -53.5%;
+    }
+    .animation .item-5 {
+        left: -45%;
+    }
+}
+
 @-moz-keyframes items {
     0%{-moz-transform:rotate(3deg)}
     50%{-moz-transform:rotate(1deg)}
